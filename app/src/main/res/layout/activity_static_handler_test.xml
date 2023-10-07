@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".handler.StaticHandlerTestActivity">
+
+    <TextView
+        android:id="@+id/tv_test_handler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标准写法Handler测试（静态内部类+弱引用）"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <TextView
+        android:id="@+id/tv_test_handler_sendmessage"
+        android:layout_width="227dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="120dp"
+        android:text="待测试UI组件 - SendMessage"
+        app:layout_constraintEnd_toEndOf="@+id/tv_test_handler"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="@+id/tv_test_handler"
+        app:layout_constraintTop_toBottomOf="@+id/tv_test_handler" />
+
+    <TextView
+        android:id="@+id/tv_test_handler_postmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="待测试UI组件 - PostMessage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_test_handler_sendmessage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_test_handler_sendmessage"
+        app:layout_constraintTop_toBottomOf="@+id/tv_test_handler_sendmessage"
+        app:layout_constraintVertical_bias="0.223" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
